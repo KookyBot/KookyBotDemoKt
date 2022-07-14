@@ -17,10 +17,13 @@ tasks {
 
 repositories {
     mavenCentral()
+    maven { url = uri("https://libraries.minecraft.net") }
     maven { url = uri("https://jitpack.io") }
 }
 
 dependencies {
+    // LOG
+    implementation("org.slf4j:slf4j-simple:1.7.11")
     // KOOK SDK
     implementation("com.github.KookyBot:KookyBot:0.1.2")
 
