@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
     kotlin("jvm") version "1.7.0"
 }
@@ -25,15 +23,11 @@ dependencies {
     // LOG
     implementation("org.slf4j:slf4j-simple:1.7.11")
     // KOOK SDK
-    implementation("com.github.KookyBot:KookyBot:0.1.2")
+    implementation("com.github.KookyBot:KookyBot:0.1.3-SNAPSHOT")
 
     testImplementation(kotlin("test"))
 }
 
 tasks.test {
     useJUnitPlatform()
-}
-
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
 }
