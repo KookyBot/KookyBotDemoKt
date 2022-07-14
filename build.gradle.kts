@@ -7,6 +7,14 @@ plugins {
 group = "io.github.kookybot"
 version = "1.0-SNAPSHOT"
 
+tasks {
+    compileKotlin {
+        kotlinOptions {
+            jvmTarget = "17"
+        }
+    }
+}
+
 repositories {
     mavenCentral()
     maven { url = uri("https://jitpack.io") }
