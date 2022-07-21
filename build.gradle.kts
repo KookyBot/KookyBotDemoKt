@@ -23,7 +23,7 @@ dependencies {
     // Logging Framework
     implementation("org.slf4j:slf4j-simple:1.7.11")
     // KOOK SDK
-    implementation("com.github.KookyBot:KookyBot:0.1.3-SNAPSHOT")
+    implementation("com.github.KookyBot:KookyBot:0.2.1")
 
     testImplementation(kotlin("test"))
 }
